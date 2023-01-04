@@ -1,50 +1,81 @@
-body{
-    background-color: lightgoldenrodyellow;
-}
-fieldset {
-    width: 500px;
-    border: 2px solid #dcdcdc;
-    border-radius: 10px;
-    padding: 10px 20px;
-    text-align: left;
-}
-.fld{
-    background-color : powderblue;
-    border-color: transparent;
+
+
+
+
+.bdy{
+    /*background-color: deepskyblue;*/
     width: 50%;
-    margin-left: 20%;
-    margin-top: 10%;
-}
-#menu{
-    background-color : steelblue;
-    border-color: transparent;
-    width: 50%;
-    margin-left: 20%;
-}
-fieldset{
-    background-color : powderblue;
-    border-color: transparent;
-    width: 50%;
-    margin-left: 20%;
-}
-legend {
-    background-color: #000;
-    color: #fff;
-    padding: 3px 6px;
-}
-legend:hover {
-    background-color: lightcoral;
+    margin-left: 24%;
+
+
 
 }
-input:hover,select:hover{
-    background-color: lightcoral;
+
+.fld{
+
+    background-color : darkkhaki;
+    border-color: transparent;
+    border-radius:10px;
+    margin-top: 10%;
+    padding: 20px 10px 20px 5px;
+
+}
+.vld {
+    /*background-color: darksalmon;*/
+    width: 100%;
+
+    margin-top: 10%;
+
+}
+legend {
+    background-color: black;
+    border-radius: 4px;
+    padding: 10px;
+    color: darkkhaki;
+}
+
+
+
+
+input{
+    padding: 7px;
+}
+select:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 input,select,button{
     border: transparent;
+
 }
-a{
-    color: black;
+input:hover,button:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    color: darkkhaki;
+    background-color: black;
+    color: ghostwhite;
 }
-a:hover{
-    background-color: lightcoral;
+
+
+.btn2{
+    background-color: khaki;
+    width: 24%;
+    float: left;
+    border: 1px solid green;
+    border-radius: 4px;
+    padding: 12px 28px;
+    margin-right: 1%;
+    margin-right: 1%;
+    margin-top: 10%;
+
+    margin-bottom: 4%;
+}
+
+.btn{
+    background-color: ghostwhite;
+    width: 49%;
+    float: left;
+    border: 1px solid green;
+    border-radius: 4px;
+    padding: 12px 28px;
+    margin-right: 1%;
+    margin-top: 4%;
 }

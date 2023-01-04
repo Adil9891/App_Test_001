@@ -7,13 +7,10 @@ import jakarta.servlet.annotation.*;
 
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 
-@WebServlet(name = "CrudClient", value = "/CrudClient")
-public class CrudClient extends HttpServlet {
+@WebServlet(name = "addClient", value = "/addClient")
+public class addClient extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
@@ -23,13 +20,11 @@ public class CrudClient extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         doGet(request, response);
         PrintWriter out = response.getWriter();
-        String nom =request.getParameter("name");
+        String nom =request.getParameter("nom");
         String prenom =request.getParameter("prenom");
         String cin=request.getParameter("cin");
-        out.println("Bonjour1");
-        out.println("p1"+request.getParameter("dateNaissance"));
-        out.println("p2"+request.getParameter("dateNaissance").toString());
-        String dateNaissance =request.getParameter("dateNaissance").toString();
+        String dateNaissance =request.getParameter("dateNaissance");
+
        // String requette = "insert into client values(default,'MM44','LAAZIZI','AMINE','15/09/1993')";
         String requette = "insert into client values (DEFAULT,\'"+cin+"\',"+"\'"+nom+ "\',\'" +prenom+ "\',\'" +dateNaissance+ "\')";
 
@@ -37,7 +32,7 @@ public class CrudClient extends HttpServlet {
 
 
 
-       String user = "admin";
+         String user = "admin";
          String pwd = "azerty";
 
 
@@ -54,13 +49,19 @@ public class CrudClient extends HttpServlet {
         try {
 
             Statement st = conn.createStatement();
-            st.executeQuery(requette);
+            st.executeUpdate(requette);
+            out.println(st.getResultSet());
             st.close();
+            //response.sendRedirect("index.jsp");
 
             out.println("Ok");
+            RequestDispatcher redirection=request.getRequestDispatcher("index.jsp");
+            redirection.forward(request, response);
         } catch (SQLException e) {
-            out.println("Erreur 2 : " + e.getMessage());
+            out.println("error : "+e.getMessage());
             throw new RuntimeException(e);
         }
+
+
     }
 }
