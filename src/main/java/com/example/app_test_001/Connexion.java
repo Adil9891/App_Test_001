@@ -13,7 +13,7 @@ public class Connexion {
         try {
             String url = "jdbc:postgresql://localhost/BANQUE";
             conn = DriverManager.getConnection(url, user, pwd);
-            System.out.println("connexion reussite");
+
         } catch (SQLException e) {
 
         }

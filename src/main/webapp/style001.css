@@ -1,31 +1,19 @@
-
-
-
-
 .bdy{
     /*background-color: deepskyblue;*/
     width: 50%;
     margin-left: 24%;
-
-
-
 }
-
 .fld{
-
     background-color : darkkhaki;
     border-color: transparent;
     border-radius:10px;
     margin-top: 10%;
     padding: 20px 10px 20px 5px;
-
 }
 .vld {
     /*background-color: darksalmon;*/
     width: 100%;
-
     margin-top: 10%;
-
 }
 legend {
     background-color: black;
@@ -78,4 +66,24 @@ input:hover,button:hover{
     padding: 12px 28px;
     margin-right: 1%;
     margin-top: 4%;
+}
+.tbl{
+    width: 100%;
+    color: black;
+}
+
+tr:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    border-radius: 3px;
+}
+.td2{
+    padding: 5px 5px;
+    margin-top: 3px;
+    text-align: center;
+}
+th{
+    background-color: khaki;
+    color: ghostwhite;
+    padding: 10px 10px ;
+    border-radius: 3px;
 }

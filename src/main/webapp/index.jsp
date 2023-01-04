@@ -18,7 +18,7 @@
         <button class="btn2" type="button" href="index.jsp">Rechercher</button>
     </div>
 
-<form action="addClient" method="post" >
+<form action="customerList" method="post" >
            <fieldset class="fld">
             <legend>Créer une fiche client</legend>
                         <table >
