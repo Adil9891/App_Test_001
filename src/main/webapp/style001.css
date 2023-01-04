@@ -1,0 +1,50 @@
+body{
+    background-color: lightgoldenrodyellow;
+}
+fieldset {
+    width: 500px;
+    border: 2px solid #dcdcdc;
+    border-radius: 10px;
+    padding: 10px 20px;
+    text-align: left;
+}
+.fld{
+    background-color : powderblue;
+    border-color: transparent;
+    width: 50%;
+    margin-left: 20%;
+    margin-top: 10%;
+}
+#menu{
+    background-color : steelblue;
+    border-color: transparent;
+    width: 50%;
+    margin-left: 20%;
+}
+fieldset{
+    background-color : powderblue;
+    border-color: transparent;
+    width: 50%;
+    margin-left: 20%;
+}
+legend {
+    background-color: #000;
+    color: #fff;
+    padding: 3px 6px;
+}
+legend:hover {
+    background-color: lightcoral;
+
+}
+input:hover,select:hover{
+    background-color: lightcoral;
+}
+input,select,button{
+    border: transparent;
+}
+a{
+    color: black;
+}
+a:hover{
+    background-color: lightcoral;
+}
