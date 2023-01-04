@@ -77,7 +77,7 @@ tr:hover{
     border-radius: 3px;
 }
 .td2{
-    padding: 5px 5px;
+    padding: 10px 10px;
     margin-top: 3px;
     text-align: center;
 }
@@ -86,4 +86,5 @@ th{
     color: ghostwhite;
     padding: 10px 10px ;
     border-radius: 3px;
+
 }
